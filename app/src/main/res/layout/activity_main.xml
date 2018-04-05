@@ -21,18 +21,19 @@
             >
             <ImageView
                 android:id="@+id/imgconfiguracion"
-                android:layout_width="100dp"
+                android:layout_width="125dp"
                 android:layout_height="100dp"
                 android:src="@drawable/conf"/>
             <TextView
+                android:id="@+id/configuracion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Configuracion"
+                android:text="@string/configuracion"
                 android:gravity="center"/>
         </LinearLayout>
         <ImageView
             android:layout_height="match_parent"
-            android:layout_width="45dp"
+            android:layout_width="25dp"
             />
         <LinearLayout
             android:background="#01DF3A"
@@ -42,60 +43,69 @@
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/imgperfil"
-                android:layout_width="100dp"
+                android:layout_width="125dp"
                 android:layout_height="100dp"
                 android:src="@drawable/perf"/>
             <TextView
+                android:id="@+id/perfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Perfil"
+                android:text="@string/perfil"
                 android:gravity="center"/>
         </LinearLayout>
 
     </TableRow>
+
     <TableRow
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center">
+
         <LinearLayout
-            android:background="#3104B4"
-            android:padding="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#3104B4"
             android:orientation="vertical"
-            >
+            android:padding="15dp">
+
             <ImageView
                 android:id="@+id/imgfav"
-                android:layout_width="100dp"
+                android:layout_width="125dp"
                 android:layout_height="100dp"
-                android:src="@drawable/fav"/>
+                android:src="@drawable/fav" />
+
             <TextView
+                android:id="@+id/favoritos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Favoritos"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="@string/favoritos" />
         </LinearLayout>
+
         <ImageView
-            android:layout_height="match_parent"
-            android:layout_width="45dp"
-            />
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+
         <LinearLayout
-            android:background="#A901BD"
-            android:padding="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="#A901BD"
+            android:orientation="vertical"
+            android:padding="15dp">
+
             <ImageView
                 android:id="@+id/imgingresos"
-                android:layout_width="100dp"
+                android:layout_width="125dp"
                 android:layout_height="100dp"
-                android:src="@drawable/ing"/>
+                android:src="@drawable/ing" />
+
             <TextView
+                android:id="@+id/ingresos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ingresos"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="@string/ingresos" />
         </LinearLayout>
 
     </TableRow>
@@ -114,18 +124,19 @@
             >
             <ImageView
                 android:id="@+id/imgprsupuesto"
-                android:layout_width="100dp"
+                android:layout_width="125dp"
                 android:layout_height="100dp"
                 android:src="@drawable/pres"/>
             <TextView
+                android:id="@+id/presupuesto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Presupuesto"
+                android:text="@string/presupuesto"
                 android:gravity="center"/>
         </LinearLayout>
         <ImageView
             android:layout_height="match_parent"
-            android:layout_width="45dp"
+            android:layout_width="25dp"
             />
         <LinearLayout
             android:background="#B4045F"
@@ -135,13 +146,14 @@
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/imgegresos"
-                android:layout_width="100dp"
+                android:layout_width="125dp"
                 android:layout_height="100dp"
                 android:src="@drawable/egr"/>
             <TextView
+                android:id="@+id/egresos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Egresos"
+                android:text="@string/egresos"
                 android:gravity="center"/>
         </LinearLayout>
 
