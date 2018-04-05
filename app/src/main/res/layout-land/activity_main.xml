@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context="com.example.yanirayanes.taller2.MainActivity">
 
     <TableRow
@@ -29,28 +30,44 @@
                 android:text="Configuracion"
                 android:gravity="center"/>
         </LinearLayout>
-        <ImageView
-            android:layout_height="match_parent"
-            android:layout_width="45dp"
-            />
+
         <LinearLayout
-            android:background="#01DF3A"
-            android:padding="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="#01DF3A"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
             <ImageView
                 android:id="@+id/imgperfil"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/perf"/>
+                android:src="@drawable/perf" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Perfil"
+                android:gravity="center"
+                android:text="Perfil" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#F5A9A9"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/imgprsupuesto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pres"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presupuesto"
                 android:gravity="center"/>
         </LinearLayout>
-
     </TableRow>
     <TableRow
         android:layout_marginTop="10dp"
@@ -75,10 +92,6 @@
                 android:text="Favoritos"
                 android:gravity="center"/>
         </LinearLayout>
-        <ImageView
-            android:layout_height="match_parent"
-            android:layout_width="45dp"
-            />
         <LinearLayout
             android:background="#A901BD"
             android:padding="15dp"
@@ -96,56 +109,23 @@
                 android:text="Ingresos"
                 android:gravity="center"/>
         </LinearLayout>
-
-    </TableRow>   
-    <TableRow
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center">
-        <LinearLayout
-            android:background="#F5A9A9"
-            android:padding="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <ImageView
-                android:id="@+id/imgprsupuesto"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/pres"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Presupuesto"
-                android:gravity="center"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_height="match_parent"
-            android:layout_width="45dp"
-            />
         <LinearLayout
             android:background="#B4045F"
             android:padding="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <ImageView
-                android:id="@+id/imgegresos"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/egr"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Egresos"
-                android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/imgegresos"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/egr"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Egresos"
+                    android:gravity="center"/>
         </LinearLayout>
-
     </TableRow>
-    
 
-
-</TableLayout>
+</GridLayout>
